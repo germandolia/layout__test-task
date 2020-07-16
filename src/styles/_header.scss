@@ -1,0 +1,38 @@
+.header {
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+  }
+
+  &__title {
+    margin: 15px;
+    font-weight: 800;
+    color: $text-color-dark;
+  }
+
+  &__promo-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__promo-img {
+    margin: 15px;
+  }
+
+  &__promo-text {
+    line-height: 100%;
+    font-style: italic;
+    font-size: 16px;
+    color: $text-color-lighter;
+  }
+}
