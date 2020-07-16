@@ -1,0 +1,114 @@
+.about {
+  height: 850px;
+
+  background-image: url(../images/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(233, 233, 233);
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 auto;
+
+    height: 80%;
+    max-width: 1024px;
+  }
+
+  &__article {
+    position: relative;
+    width: 450px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 25px;
+      top: 275px;
+      width: 10px;
+      height: 145px;
+      background-image: url(../images/dotted-arrow.svg);
+    }
+  }
+
+  &__subheading {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      width: 135px;
+      height: 4px;
+      background-color: $color-warm;
+    }
+
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      right: 128px;
+      width: 145px;
+      height: 4px;
+      background-color: $color-cold;
+    }
+  }
+
+  &__paragraph {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    padding-left: 80px;
+    width: 380px;
+    line-height: 130%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      background-image: url(../images/Ellipse.png);
+    }
+
+    &:first-of-type::before {
+      content: "2в1";
+    }
+    &:nth-of-type(2) {
+      &::before {
+        content: "2";
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 82px;
+        top: 32px;
+        width: 85px;
+        height: 3px;
+        background-color: $color-warm;
+      }
+    }
+    &:last-of-type {
+      &::before {
+        content: "1";
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 82px;
+        top: 32px;
+        width: 40px;
+        height: 3px;
+        background-color: $color-cold;
+      }
+    }
+  }
+}
