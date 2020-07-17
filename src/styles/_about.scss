@@ -43,7 +43,7 @@
       bottom: 0;
       width: 135px;
       height: 4px;
-      background-color: $color-warm;
+      background-color: $main-color-warm;
     }
 
     &::after {
@@ -54,7 +54,7 @@
       right: 128px;
       width: 145px;
       height: 4px;
-      background-color: $color-cold;
+      background-color: $main-color-cold;
     }
   }
 
@@ -93,7 +93,7 @@
         top: 32px;
         width: 85px;
         height: 3px;
-        background-color: $color-warm;
+        background-color: $main-color-warm;
       }
     }
     &:last-of-type {
@@ -107,7 +107,7 @@
         top: 32px;
         width: 40px;
         height: 3px;
-        background-color: $color-cold;
+        background-color: $main-color-cold;
       }
     }
   }

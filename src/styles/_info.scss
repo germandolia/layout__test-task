@@ -1,0 +1,15 @@
+.info {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  
+  &__title {
+    margin: 20px auto 45px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+}

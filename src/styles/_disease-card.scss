@@ -1,0 +1,54 @@
+.disease-card {
+  display: flex;
+  flex-direction: column;
+
+  margin: 25px;
+  width: 350px;
+  height: 350px;
+
+  &__title {
+    width: 160px;
+    margin: 20px;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: left;
+  }
+
+  &__disease {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &::before {
+      content: url(../images/diseases/round-form-1.png);
+      position: absolute;
+      top: -20px;
+      left: -20px;
+    }
+  }
+  &:nth-of-type(2) > &__disease::before {
+    content: url(../images/diseases/round-form-2.png);
+  }
+  &:nth-of-type(3) > &__disease::before {
+    content: url(../images/diseases/round-form-3.png);
+  }
+
+  &__text {
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    line-height: 150%;
+    color: $text-color-lighter;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      width: 50px;
+      height: 2px;
+      background-color: $highlight-cold;
+    }
+  }
+}
