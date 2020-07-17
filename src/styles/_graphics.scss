@@ -1,0 +1,38 @@
+.graphics {
+  // position: absolute;
+  // top: 60%;
+  // left: 10%;
+  margin-top: -350px;
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  &__graphic {
+    position: relative;
+    &::before {
+      content: "299$";
+      position: absolute;
+      width: 70px;
+      height: 30px;
+      border-radius: 15px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      background-color: $color-warm;
+    }
+    &::after {
+      content: "299$";
+      position: absolute;
+      width: 95px;
+      height: 30px;
+      border-radius: 15px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      background-color: $color-cold;
+    }
+  }
+}
