@@ -4,7 +4,7 @@
   background-image: url(../images/bg.png);
   background-position: center;
   background-size: cover;
-  background-color: rgb(233, 233, 233);
+  background-color: $bg-color;
 
   &__container {
     display: flex;
@@ -52,7 +52,7 @@
       z-index: -1;
       position: absolute;
       bottom: 0;
-      right: 128px;
+      right: 80px;
       width: 145px;
       height: 4px;
       background-color: $main-color-cold;
@@ -85,7 +85,7 @@
     }
     &:nth-of-type(2) {
       &::before {
-        content: "2";
+        content: "1";
       }
       &::after {
         content: "";
@@ -99,7 +99,7 @@
     }
     &:last-of-type {
       &::before {
-        content: "1";
+        content: "2";
       }
       &::after {
         content: "";

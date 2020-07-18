@@ -1,8 +1,11 @@
-/* eslint-disable no-undef */
 // eslint-disable-next-line no-unused-vars
-function onSubmit() {
+'use strict';
+
+const orderForm = document.querySelector('.order-card__form');
+
+orderForm.onsubmit = function(event) {
   event.preventDefault();
 
   document.querySelector('input[name=name]').value = '';
-  document.querySelector('input[name=message]').value = '';
-}
+  document.querySelector('input[name=tel]').value = '';
+};

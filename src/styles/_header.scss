@@ -6,6 +6,7 @@
 
   &__container {
     display: flex;
+    justify-content: flex-end;
     margin: 0 auto;
     max-width: 1024px;
   }
@@ -14,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin: 15px 25px;
   }
 
   &__title {
@@ -22,7 +23,11 @@
     font-weight: 800;
     color: $text-color-dark;
   }
-
+  &__awards {
+    width: 700px;
+    padding-left: 50px;
+    display: flex;
+  }
   &__promo-message {
     display: flex;
     justify-content: center;

@@ -6,7 +6,12 @@
     <title>Микоцин</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="icon" href="/images/icon_big.svg">
-    <!-- <script defer="" src="/src/scripts/main.js"></script> -->
+    <script
+      defer
+      type="module"
+      src="/scripts/main.js"
+    >
+    </script>
   </head>
   <body>
     <header class="header">
@@ -20,35 +25,37 @@
             Микоцин
           </h1>
         </div>
-        <div class="header__promo-message">
-          <img
-            src="./images/promo_icon_1.png"
-            alt="Микоцин - №1"
-            class="header__promo-img"
-          >
-          <p class="header__promo-text">
-            №1 Для избавления от любого типа грибка
-          </p>
-        </div>
-        <div class="header__promo-message">
-          <img
-            src="./images/promo_icon_2.png"
-            alt="Микоцин рекомендован дерматологами"
-            class="header__promo-img"
-          >
-          <p class="header__promo-text">
-            Рекомендован дерматологами
-          </p>
-        </div>
-        <div class="header__promo-message">
-          <img
-            src="./images/promo_icon_3.png"
-            alt="13000+ довольных клиентов за 2018 год"
-            class="header__promo-img"
-          >
-          <p class="header__promo-text">
-            13000+ довольных клиентов за 2018 год
-          </p>
+        <div class="header__awards">
+          <div class="header__promo-message">
+            <img
+              src="./images/promo_icon_1.png"
+              alt="Микоцин - №1"
+              class="header__promo-img"
+            >
+            <p class="header__promo-text">
+              №1 Для избавления от любого типа грибка
+            </p>
+          </div>
+          <div class="header__promo-message">
+            <img
+              src="./images/promo_icon_2.png"
+              alt="Микоцин рекомендован дерматологами"
+              class="header__promo-img"
+            >
+            <p class="header__promo-text">
+              Рекомендован дерматологами
+            </p>
+          </div>
+          <div class="header__promo-message">
+            <img
+              src="./images/promo_icon_3.png"
+              alt="13000+ довольных клиентов за 2018 год"
+              class="header__promo-img"
+            >
+            <p class="header__promo-text">
+              13000+ довольных клиентов за 2018 год
+            </p>
+          </div>
         </div>
       </div>
     </header>
@@ -79,12 +86,12 @@
             </div>
             <div class="order-card__body">
               <h4 class="order-card__title">
-                Успейте заказать
+                Успейте заказать<br>
                 со скидкой
               </h4>
-              <span class="order-card__date">
+              <p class="order-card__date">
                 до 10.09.2018
-              </span>
+              </p>
               <div class="order-card__price">
                 <span class="order-card__old-price">
                   918₽
@@ -96,48 +103,58 @@
               <form
                 action="#"
                 method="POST"
-                onsubmit="onSubmit()"
                 class="order-card__form"
+                autocomplete="off"
               >
-                <input
-                  type="text"
-                  name="name"
-                  class="order-card__input"
-                  placeholder="email@exa"
-                  required
-                >
-                <input
-                  type="tel"
-                  name="tel"
-                  class="order-card__input"
-                  placeholder="Your name"
-                  required
-                >
-                <button type="submit" class="order-card__button">
-                  Заказать
-                </button>
+                <label for="name" class="order-card__name-input">
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    class="order-card__input"
+                    placeholder="Имя"
+                    required
+                  >
+                </label>
+                <label for="tel" class="order-card__tel-input">
+                  <input
+                    id="tel"
+                    type="tel"
+                    name="tel"
+                    class="order-card__input"
+                    placeholder="Телефон"
+                    required
+                  >
+                </label>
+                <div class="order-card__button-wrapper">
+                  <button type="submit" class="order-card__button">
+                    Заказать<br>
+                    <small>со скидкой</small>
+                  </button>
+                </div>
               </form>
               <p class="order-card__paragraph">
-
+                Осталось
+                <strong class="order-card__amount">
+                  10
+                </strong>
+                упаковок<br> со скидкой
               </p>
-              <div class="order-card__security">
-                <img src="./images/order-card/protection-icon.png" alt="Защита данных">
-                <span>Ваши данные защищены!</span>
-              </div>
             </div>
+            <p class="order-card__security">
+              Ваши данные защищены!
+            </p>
           </div>
         </div>
       </section>
       <section class="graphics">
         <div class="graphics__container">
           <div class="graphics__graphic">
-            <a href="" class="">
-              <img
-                src="./images/Micocin.png"
-                alt=""
-                class="graphics__img"
-              >
-            </a>
+            <img
+              src="./images/Micocin.png"
+              alt=""
+              class="graphics__img"
+            >
           </div>
         </div>
       </section>
