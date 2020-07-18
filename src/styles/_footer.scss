@@ -9,7 +9,7 @@
 
   text-align: center;
   font-size: 22px;
-  
+
   &__logo {
     position: absolute;
     top: -20px;
@@ -24,5 +24,14 @@
     padding: 40px;
     border: 2px solid $highlight-warm;
     border-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin: 5%;
+    &__paragraph {
+      padding: 10%;
+    }
   }
 }

@@ -24,24 +24,49 @@
     color: $text-color-dark;
   }
   &__awards {
-    width: 700px;
+    max-width: 700px;
     padding-left: 50px;
     display: flex;
   }
-  &__promo-message {
+  &__award-message {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__promo-img {
+  &__award {
     margin: 15px;
   }
 
-  &__promo-text {
+  &__award-text {
     line-height: 100%;
     font-style: italic;
     font-size: 16px;
-    color: $text-color-lighter;
+    color: $text-color-light;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    position: relative;
+    left: 0;
+    width: 70%;
+    padding: 5%;
+    margin-bottom: 10%;
+    &__container,
+    &__awards,
+    &__award-message,
+    &__logo {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+    &__awards {
+      padding: 0;
+    }
+    &__award-message {
+      padding: 10px;
+    }
   }
 }

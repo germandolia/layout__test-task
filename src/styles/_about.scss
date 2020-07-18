@@ -113,3 +113,37 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 10% 2%;
+    margin: 0 0 10%;
+    height: auto;
+    background-image: none;
+    &__heading {
+      font-size: 36px;
+    }
+    &__subheading {
+      color: $main-color-warm;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    &__article {
+      width: 90%;
+      &::before {
+        display: none;
+      }
+    }
+    &__paragraph {
+      margin: 0 0 10%;
+      width: 90%;
+    }
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

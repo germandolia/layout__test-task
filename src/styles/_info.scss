@@ -3,6 +3,13 @@
   max-width: 1200px;
   text-align: center;
   
+  &__logo {
+    transition: transform 1s ease;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+
   &__title {
     margin: 20px auto 45px;
   }
@@ -15,5 +22,16 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    padding: 5%;
+    &__cards {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 }
