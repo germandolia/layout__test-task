@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  text-align: center;
+
+  &__logo {
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    background-color: #fff;
+  }
+
+  &__paragraph {
+    width: 100%;
+    padding: 40px;
+    border: 2px solid $highlight-warm;
+    border-radius: 7px;
+  }
+}

@@ -12,10 +12,9 @@
 
     &::before,
     &::after {
-      content: "299₽";
+      content: $price-value;
       position: absolute;
       padding: 3px 5px;
-      width: 75px;
       height: 30px;
 
       text-align: center;

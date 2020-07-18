@@ -1,0 +1,30 @@
+.order-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 270px;
+  &__header {
+    // display: flex;
+    position: absolute;
+    padding: 5px;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f2f8ff;
+    border-radius: 0 0 15px 15px;
+    border: 8px solid $main-color-cold;
+    border-top: none;
+  }
+  &__body {
+    padding: 25px;
+    border: 8px solid $main-color-cold;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}

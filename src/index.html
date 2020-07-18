@@ -6,7 +6,7 @@
     <title>Микоцин</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="icon" href="/images/icon_big.svg">
-    <script src="./scripts/main.js"></script>
+    <!-- <script defer="" src="/src/scripts/main.js"></script> -->
   </head>
   <body>
     <header class="header">
@@ -72,7 +72,60 @@
               <strong>Гель</strong> Микоцин<br> <strong>восстанавливает кожу<br></strong> и создает на ней <strong>защитный<br> барьер</strong>
             </p>
           </article>
+          <div class="order-card">
+            <div class="order-card__header">
+              <img src="./images/order-card/delivery-icon.png" alt="Бесплатная доставка">
+              <span>Бесплатно</span>
+            </div>
+            <div class="order-card__body">
+              <h4 class="order-card__title">
+                Успейте заказать
+                со скидкой
+              </h4>
+              <span class="order-card__date">
+                до 10.09.2018
+              </span>
+              <div class="order-card__price">
+                <span class="order-card__old-price">
+                  918₽
+                </span>
+                <span class="order-card__new-price">
+                  459₽
+                </span>
+              </div>
+              <form
+                action="#"
+                method="POST"
+                onsubmit="onSubmit()"
+                class="order-card__form"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  class="order-card__input"
+                  placeholder="email@exa"
+                  required
+                >
+                <input
+                  type="tel"
+                  name="tel"
+                  class="order-card__input"
+                  placeholder="Your name"
+                  required
+                >
+                <button type="submit" class="order-card__button">
+                  Заказать
+                </button>
+              </form>
+              <p class="order-card__paragraph">
 
+              </p>
+              <div class="order-card__security">
+                <img src="./images/order-card/protection-icon.png" alt="Защита данных">
+                <span>Ваши данные защищены!</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="graphics">
@@ -154,10 +207,16 @@
       </section>
     </main>
     <footer class="footer">
-      <img
+      <div class="footer__logo">
+        <img
         src="./images/statistics.png"
         alt="Статистика"
-      >
+        >
+      </div>
+      <p class="footer__paragraph">
+        <strong>Статистика:</strong> каждые 60 секунд врачи диагностируют опасные поражения внутренних органов,<br>
+        вызванные грибком, у 1-го пациент
+      </p>
     </footer>
   </body>
 </html>
