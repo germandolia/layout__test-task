@@ -1,3 +1,10 @@
-FE Template
+# Micocin landing page
+- [DEMO](https://germandolia.github.io/layout__test-task/)
+- Landing page for antifungal medicine
 
-[DEMO LINK](https://germandolia.github.io/REPO_NAME/)
+## Technologies used
+- HTML5
+- CSS3
+- BEM
+- Sass
+- JavaScript

@@ -1,0 +1,15 @@
+%small-underline-bar {
+  content: "";
+  position: absolute;
+  left: 82px;
+  top: 32px;
+  height: 3px;
+};
+
+%large-underline-bar {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+}

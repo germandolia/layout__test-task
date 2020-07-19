@@ -1,8 +1,12 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
 .info {
   margin: 0 auto;
   max-width: 1200px;
   text-align: center;
-  
+
   &__logo {
     transition: transform 1s ease;
     &:hover {

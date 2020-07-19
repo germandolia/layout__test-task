@@ -1,3 +1,7 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
 .about {
   height: 850px;
 
@@ -10,22 +14,21 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 0 auto;
 
+    margin: 0 auto;
     height: 80%;
     max-width: 1200px;
   }
 
   &__article {
     position: relative;
-    // padding-left: 40px;
     width: 400px;
 
     &::before {
       content: "";
       position: absolute;
-      left: 25px;
-      top: 275px;
+      left: 6.5%;
+      top: 53%;
       width: 10px;
       height: 145px;
       background-image: url(../images/dotted-arrow.svg);
@@ -38,34 +41,29 @@
     margin-bottom: 20px;
 
     &::before {
-      content: "";
-      z-index: -1;
-      position: absolute;
-      bottom: 0;
+      @extend %large-underline-bar;
       width: 135px;
-      height: 4px;
       background-color: $main-color-warm;
     }
 
     &::after {
-      content: "";
-      z-index: -1;
-      position: absolute;
-      bottom: 0;
+      @extend %large-underline-bar;
       right: 80px;
       width: 145px;
-      height: 4px;
       background-color: $main-color-cold;
     }
   }
 
   &__paragraph {
     position: relative;
+
     padding: 10px;
     margin: 10px 0;
     padding-left: 80px;
     width: 380px;
+
     line-height: 130%;
+    color: $text-color-light;
 
     &::before {
       content: "";
@@ -74,40 +72,36 @@
       top: 25%;
       width: 60px;
       height: 60px;
+
       text-align: center;
       line-height: 60px;
       color: #fff;
+
       background-image: url(../images/Ellipse.png);
     }
 
     &:first-of-type::before {
       content: "2в1";
     }
+
     &:nth-of-type(2) {
       &::before {
         content: "1";
       }
       &::after {
-        content: "";
-        position: absolute;
-        left: 82px;
-        top: 32px;
+        @extend %small-underline-bar;
         width: 85px;
-        height: 3px;
         background-color: $main-color-warm;
       }
     }
+
     &:last-of-type {
       &::before {
         content: "2";
       }
       &::after {
-        content: "";
-        position: absolute;
-        left: 82px;
-        top: 32px;
+        @extend %small-underline-bar;
         width: 40px;
-        height: 3px;
         background-color: $main-color-cold;
       }
     }
@@ -120,6 +114,11 @@
     margin: 0 0 10%;
     height: auto;
     background-image: none;
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__heading {
       font-size: 36px;
     }
@@ -139,11 +138,6 @@
     &__paragraph {
       margin: 0 0 10%;
       width: 90%;
-    }
-    &__container {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
     }
   }
 }

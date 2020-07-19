@@ -1,3 +1,7 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
 .header {
   position: absolute;
   left: 10%;
@@ -23,18 +27,20 @@
     font-weight: 800;
     color: $text-color-dark;
   }
+
   &__awards {
     max-width: 700px;
     padding-left: 50px;
     display: flex;
   }
-  &__award-message {
+
+  &__award {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__award {
+  &__award-img {
     margin: 15px;
   }
 
@@ -50,12 +56,12 @@
   .header {
     position: relative;
     left: 0;
-    width: 70%;
-    padding: 5%;
     margin-bottom: 10%;
+    padding: 5%;
+    width: 70%;
     &__container,
     &__awards,
-    &__award-message,
+    &__award,
     &__logo {
       flex-direction: column;
       justify-content: space-around;
@@ -65,7 +71,7 @@
     &__awards {
       padding: 0;
     }
-    &__award-message {
+    &__award {
       padding: 10px;
     }
   }

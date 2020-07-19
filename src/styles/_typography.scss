@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  color: $text-color-dark;
+}
+
 h1 {
   font-size: 22px;
 }
@@ -16,4 +28,8 @@ h3 {
 
 small {
   font-size: 16px;
+}
+
+strong {
+  color: $text-color-dark;
 }
